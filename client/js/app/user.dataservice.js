@@ -31,6 +31,24 @@
         })
       });
     }
+
+    function clear() {
+      $log.debug("Clearing user.");
+
+      user.email    = "";
+      user.name     = "";
+      user.password = "";
+      user.dob      = "";
+    }
+
+    function currentUserData() {
+      $log.debug("Retrieving current user data.");
+
+      return $http({
+        url:     "http://localhost:3000/api/me",
+        method:  "GET"
+      });
+    }
   }
 
 })();

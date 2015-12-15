@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Petals & Pistols</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <link href="/css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   </head>
   <body  ng-controller="MainController as vm">
 
 
-    <ion-nav-view></ion-nav-view>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Dresses</a></li>
+          <li><a href="badges.html">Shoes</a></li>
+          <li><a href="collapsible.html">Handbags</a></li>
+        </ul>
+      </div>
+    </nav>
+
 
      <form id="user" class="pure-form center" ng-submit="vm.createUser()">
         <fieldset class="pure-group center">
