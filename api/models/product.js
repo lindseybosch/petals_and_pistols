@@ -4,11 +4,11 @@ var mongoose = require('mongoose'),
 var productSchema = new mongoose.Schema({
   type:   String,
   occassion: String,
-  size: integer,
+  size: String,
   color: String,
-  quantity: integer
+  quantity: Number
 });
 
-var Product = mongoose.model('Product', userSchema);
+var Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
