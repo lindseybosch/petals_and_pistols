@@ -35,4 +35,5 @@ router.get('/totes', function(req, res, next){
 
 router.post('/totes', toteController.create);
 
+
 module.exports = router;
