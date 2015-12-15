@@ -19,6 +19,9 @@ app.set('title', env.TITLE);
 app.set('safe-title', env.SAFE_TITLE);
 app.set('secret-key', env.SECRET_KEY);
 
+
+app.set('view engine', 'jade');
+
 // Create local variables for use thoughout the application.
 app.locals.title = app.get('title');
 

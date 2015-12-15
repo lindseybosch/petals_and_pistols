@@ -15,11 +15,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/users', function(req, res, next) {
-  // User.find({}, function(errors, users){
-    res.send('New User');
-  // });
-});
+router.get('/users', usersController.index);
 
 router.post('/users', usersController.create);
 
