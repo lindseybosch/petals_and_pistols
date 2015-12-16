@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module("app")
+    .module("petalsAndPistols")
     .factory("authService", authService);
 
   authService.$inject = ["$log", "$http", "tokenService"];
