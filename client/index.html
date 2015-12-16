@@ -6,7 +6,7 @@
     <title>Petals & Pistols</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
@@ -16,25 +16,40 @@
 
 
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
+      <div class="nav-wrapper" id="navbar">
+        <a href="#" class="brand-logo">
+          <span>
+            <img id="brandImage" src="/assets/images/petals_and_pistols_logo.png">
+          </span>
+        </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="sass.html">Dresses</a></li>
           <li><a href="badges.html">Shoes</a></li>
           <li><a href="collapsible.html">Handbags</a></li>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <li><a href="collapsible.html">Tote</a></li>
+          <li><a href="collapsible.html">My Account</a></li>
         </ul>
       </div>
     </nav>
 
 
-     <form id="user" class="pure-form center" ng-submit="vm.createUser()">
+    <div>
+      <img class="responsive-img" src="https://i.imgur.com/XQ8sAC3.jpg">
+    </div>
+
+    <div>
+      <img class="responsive-img" src="https://i.imgur.com/qBvzSji.png">
+    </div>
+
+<!--      <form id="user" class="pure-form center" ng-submit="vm.createUser()">
         <fieldset class="pure-group center">
           <input type="text"     ng-model="vm.user.name"     name="name" class="name" placeholder="Your Name">
           <input type="email"    ng-model="vm.user.email"    name="email" class="email" placeholder="user@domain.com">
           <input type="password" ng-model="vm.user.password" name="password" class="password" placeholder="secretpassword">
           <button type="submit" class="pure-button pure-button-primary">Submit</button>
         </fieldset>
-      </form>
+      </form>\
 
       <h4>Log In User</h4>
       <form id="token" class="pure-form center">
@@ -43,15 +58,16 @@
           <input type="password" name="password" class="password" placeholder="secretpassword">
           <button type="submit" class="pure-button pure-button-primary">Submit</button>
         </fieldset>
-      </form>
+      </form> -->
 
-      <pre id="success">{{ vm.successMessage }}</pre>
-      <pre id="failure">{{ vm.failureMessage }}</pre>
+<!--       <pre id="success">{{ vm.successMessage }}</pre>
+      <pre id="failure">{{ vm.failureMessage }}</pre> -->
 
 
   <script src="/js/petalsAndPistols.module.js"></script>
   <script src="/js/app/main.controller.js"></script>
   <script src="/js/app/user.dataservice.js"></script>
+  <script type="/js/app/angular.config.js"></script>
 
   <script type="text/javascript">
   <!-- App scripts -->
