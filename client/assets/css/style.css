@@ -1,3 +1,5 @@
+/* Styling for whole website */
+
 body {
   background-color: #000000  ;
 }
@@ -16,5 +18,96 @@ body {
 
 
 /* First Div Large Image Section*/
+
+
+
+
+
+
+
+/* Sliding Product Gallery */
+
+.gallery {
+  background: #000000;
+}
+
+/*.gallery-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #000000;
+  counter-increment: gallery-cell;
+}*/
+
+.gallery-cell.is-selected {
+  background: #000000;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  content: counter(gallery-cell);
+  line-height: 200px;
+}
+
+#blockOne {
+  background-image: url("https://i.imgur.com/Y2UtRjS.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
+
+#blockTwo {
+  background-image: url("https://i.imgur.com/iY2DrfN.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
+
+#blockThree {
+  background-image: url("https://i.imgur.com/fkmlhwm.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
+
+#blockFour {
+  background-image: url("https://i.imgur.com/tggKNbG.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
+
+#blockFour {
+  background-image: url("https://i.imgur.com/RN9rInn.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+}
 
 
