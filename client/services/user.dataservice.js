@@ -12,7 +12,8 @@
       name:    "",
       email:   "",
       password: "",
-      create:   create
+      create:   create,
+      currentUserData: currentUserData
     };
 
     return user;
@@ -38,7 +39,6 @@
       user.email    = "";
       user.name     = "";
       user.password = "";
-      user.dob      = "";
     }
 
     function currentUserData() {

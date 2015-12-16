@@ -9,7 +9,7 @@
 
   function tokenSigningService(tokenService, $log) {
     return {
-      request: signWithToken
+      request: signWithToken,
     };
 
     function signWithToken(request) {

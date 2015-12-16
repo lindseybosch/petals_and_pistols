@@ -9,10 +9,10 @@ var jwt        = require("jsonwebtoken");
 
 
 // Load local lib
-var env      = require('./config/environment'),
-    mongoose = require('./config/database')
+var env      = require('./api/config/environment'),
+    mongoose = require('./api/config/database')
 
-var apiRoutes = require('./routes/api');
+var apiRoutes = require('./api/routes/api');
 var app = express();
 
 app.set('title', env.TITLE);
@@ -80,13 +80,13 @@ app.use(['/api/users', '/api/token'], function(req, res, next) {
 app.use('/api', bodyParser.json());
 
 // User resource route (POST /users)
-require('./routes/userRoute')(app, errorHandler);
+require('./api/routes/userRoute')(app, errorHandler);
 
 // Token resource route (POST /token)
-require('./routes/tokenRoute')(app, errorHandler);
+require('./api/routes/tokenRoute')(app, errorHandler);
 
 // Authorized resource route (GET /me)
-require('./routes/meRoute')(app, errorHandler);
+require('./api/routes/meRoute')(app, errorHandler);
 
 app.use('/', apiRoutes);
 
