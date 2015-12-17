@@ -9,8 +9,8 @@
 
   function authService($log, $http, tokenService) {
     var auth = {
-      email:      "lin@lin.com",
-      password:   "12345",
+      email:      "",
+      password:   "",
       logIn:      logIn,
       logOut:     logOut,
       clear:      clear,

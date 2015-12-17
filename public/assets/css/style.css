@@ -2,28 +2,30 @@
 
 body {
   background-color: #000000;
-  color: white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
+/*#ui-style {
+  margin-top: 40px;
+}
+*/
 
 /* Navigation Styling */
 
 #navbar {
-  background-color: #000000 ;
+  background-color: #000000;
+  margin-bottom: 20px;
 }
 
 #brandImage {
   max-width: 295px;
 }
-
-
-
-/* First Div Large Image Section*/
-
-
-
-
-
 
 
 /* Sliding Product Gallery */
@@ -32,13 +34,13 @@ body {
   background: #000000;
 }
 
-/*.gallery-cell {
+.gallery-cell {
   width: 28%;
   height: 200px;
   margin-right: 10px;
   background: #000000;
   counter-increment: gallery-cell;
-}*/
+}
 
 .gallery-cell.is-selected {
   background: #000000;
@@ -52,7 +54,7 @@ body {
 }
 
 #blockOne {
-  background-image: url("https://i.imgur.com/Y2UtRjS.png");
+  background-image: url("https://i.imgur.com/RN9rInn.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 120%;
@@ -100,7 +102,7 @@ body {
 }
 
 #blockFour {
-  background-image: url("https://i.imgur.com/RN9rInn.png");
+  background-image: url("https://i.imgur.com/Y2UtRjS.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 120%;
@@ -111,4 +113,33 @@ body {
   margin-left: -250px; /* Half the width */
 }
 
+/* Dresses on Landing Page */
+
+.dresses {
+  margin-top: 40px;
+}
+
+#imageOne {
+  float: left;
+  margin-left: 10%;
+}
+
+#imageTwo {
+  float: left;
+}
+
+#imageThree {
+  float: left;
+}
+
+
+/* Account Page */
+
+#account-page {
+  margin-top: 40px;
+}
+
+#account-font {
+  color: white;
+}
 

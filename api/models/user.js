@@ -1,12 +1,14 @@
 var mongoose = require('mongoose'),
     debug    = require('debug')('app:models');
+    Product  = require('./product');
 
 mongoose.Promise = Promise;
 
 var userSchema = new mongoose.Schema({
   name:   String,
   email: String,
-  password: String
+  password: String,
+  products: [{type: mongoose.Schema.Types.ObjectId, ref: 'Product'}]
 });
 
 

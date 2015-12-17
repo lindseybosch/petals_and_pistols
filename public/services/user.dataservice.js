@@ -13,7 +13,8 @@
       email:   "",
       password: "",
       create:   create,
-      currentUserData: currentUserData
+      currentUserData: currentUserData,
+      clear: clear
     };
 
     return user;

@@ -5,9 +5,9 @@
     .module("petalsAndPistols")
     .controller("MainController", MainController);
 
-  MainController.$inject = ["userDataService", "authService", "$log"];
+  MainController.$inject = ["userDataService", "authService", "$log", "$state"];
 
-  function MainController(userDataService, authService, $log) {
+  function MainController(userDataService, authService, $log, $state) {
     var vm = this;
 
     vm.user = userDataService;
@@ -40,7 +40,7 @@
 
       .then(function(data) {
         $log.debug("Success:", data)
-
+        $state.go("home");
         return vm.user.currentUserData();
       })
 

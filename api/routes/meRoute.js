@@ -19,7 +19,9 @@ module.exports = function(app, errorHandler) {
     function(req, res, next) {
       console.log('Request made to /me with token:', req.decoded);
 
-      User.findOne({email: req.decoded.email}).exec()
+      User.findOne({email: req.decoded.email})
+      .populate('products')
+      .exec()
         .then(function(user) {
           res.json({
             success: true,
