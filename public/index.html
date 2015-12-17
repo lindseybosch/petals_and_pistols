@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   </head>
-  <body ng-controller="MainController as vm" ng-cloak>
+  <body ng-controller="MainController as mainCtrl" ng-cloak>
 
     <nav>
       <div class="nav-wrapper" id="navbar">
@@ -26,7 +26,7 @@
           <li><a ui-sref="dresses">Dresses</a></li>
           <li><a ui-sref="shoes">Shoes</a></li>
           <li><a ui-sref="handbags">Handbags</a></li>
-          <li><a ui-sref="tote">Tote</a></li>
+          <li><a ui-sref="tote">Tote ({{mainCtrl.tote.length}})</a></li>
           <li><a ui-sref="account">My Account</a></li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Connect with Us</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+<!--             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
@@ -68,7 +68,11 @@
   <script src="services/auth.service.js"></script>
   <script src="services/token.service.js"></script>
   <script src="services/tokenSigning.service.js"></script>
+  <script src="services/tote.service.js"></script>
   <script src="controllers/main.controller.js"></script>
+  <script src="controllers/admin.controller.js"></script>
+  <script src="controllers/dresses.controller.js"></script>
+
 
   </body>
 </html>

@@ -5,9 +5,9 @@
     .module("petalsAndPistols")
     .controller("MainController", MainController);
 
-  MainController.$inject = ["userDataService", "authService", "$log", "$state"];
+  MainController.$inject = ["userDataService", "authService", "$log", "$state", "toteService"];
 
-  function MainController(userDataService, authService, $log, $state) {
+  function MainController(userDataService, authService, $log, $state, toteService) {
     var vm = this;
 
     vm.user = userDataService;
@@ -15,6 +15,8 @@
 
     vm.successMessage = "Present all of the current user's data here.";
     vm.failureMessage = "Present any error messages here.";
+
+    vm.user.tote = toteService.tote;
 
     vm.createUser = function() {
       vm.user.create()

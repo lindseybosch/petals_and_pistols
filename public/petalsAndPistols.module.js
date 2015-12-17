@@ -24,7 +24,9 @@ console.log('configging')
 
         .state('dresses', {
           url: '/dresses',
-          templateUrl: 'templates/dresses.html'
+          templateUrl: 'templates/dresses.html',
+          controller: 'DressesController',
+          controllerAs: 'vm'
         })
 
         .state('handbags', {
@@ -40,7 +42,14 @@ console.log('configging')
         .state('tote', {
           url: '/tote',
           templateUrl: 'templates/tote.html'
-        });
+        })
+
+        .state('admin', {
+          url: '/admin/petalsAndPistols88',
+          templateUrl: 'templates/admin.html',
+          controller: 'AdminController',
+          controllerAs: 'vm'
+        })
 
 
 

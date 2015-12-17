@@ -5,6 +5,8 @@ var jwt  = require('jsonwebtoken'),
 // inline here, instead of passing to controller files.
 module.exports = function(app, errorHandler) {
 
+  app.get(checkForToken, validateToken);
+
   // User creation path:
   app.get('/api/me',
 

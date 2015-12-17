@@ -5,10 +5,15 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  color: white;
 }
 
 main {
   flex: 1 0 auto;
+}
+
+#admin {
+  background-color: pink;
 }
 
 /*#ui-style {
@@ -27,7 +32,11 @@ main {
   max-width: 295px;
 }
 
+/* Footer styling */
 
+#footer {
+  background-color: #000000;
+}
 /* Sliding Product Gallery */
 
 .gallery {

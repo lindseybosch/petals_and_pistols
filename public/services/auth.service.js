@@ -5,9 +5,9 @@
     .module("petalsAndPistols")
     .factory("authService", authService);
 
-  authService.$inject = ["$log", "$http", "tokenService"];
+  authService.$inject = ["$log", "$http", "tokenService", "userDataService"];
 
-  function authService($log, $http, tokenService) {
+  function authService($log, $http, tokenService, userDataService) {
     var auth = {
       email:      "",
       password:   "",
@@ -33,7 +33,8 @@
       }).then(function(data, status, headers, config) {
         tokenService.set(data.data.token)
         auth.isLoggedIn = true;
-
+        userDataService.email = auth.email;
+        userDataService.name = JSON.parse(atob(data.data.token.split('.')[1])).name;
         return data;
       });
     }

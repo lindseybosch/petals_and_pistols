@@ -88,7 +88,7 @@ require('./api/routes/tokenRoute')(app, errorHandler);
 // Authorized resource route (GET /me)
 require('./api/routes/meRoute')(app, errorHandler);
 
-app.use('/', apiRoutes);
+app.use('/api', apiRoutes);
 
 // Catches all 404 routes.
 app.use(function(req, res, next) {

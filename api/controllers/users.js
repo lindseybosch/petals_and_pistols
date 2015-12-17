@@ -6,14 +6,22 @@ var index = function(req, res, next){
   User.find({}, function(error, users){
     res.json(users);
   })
-}
+};
 
+// var show = function(req, res, next){
+//   User.findById(req.params.id, function(error, user){
+//     if (error) res.json({message: 'Could not find user because ' + error});
+//     res.render('users/show', {user: req.user})
+//   });
+// };
 
-
-var show = function(req, res, next){
-  User.findById(req.params.id, function(error, user){
+var addToTote = function(req, res){
+  User.findOne({email: req.body.email}, function(error, user){
     if (error) res.json({message: 'Could not find user because ' + error});
-    res.render('users/show', {user: req.user})
+    user.products.push(req.body.productId);
+    user.save(function(err){
+      res.json(user.products);
+    })
   });
 };
 
@@ -29,7 +37,7 @@ var create = function (req, res, next) {
 }
 
 module.exports = {
-  show: show,
   index: index,
+  addToTote: addToTote,
   create: create
 };

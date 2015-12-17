@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 // Require controllers.
 var usersController = require('../controllers/users');
-var productController = require('../controllers/users');
+var adminController = require('../controllers/admin');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -18,13 +18,15 @@ router.post('/users', usersController.create);
 
 router.get('/users', usersController.index);
 
-router.post('/products', productController.create);
+router.get('/tote', usersController.addToTote);
+router.post('/tote', usersController.addToTote);
 
-// router.get('/totes', function(req, res, next){
-//   res.send('Tote Page');
-// });
+router.get('/products', adminController.allProducts);
 
-// router.post('/totes', toteController.create);
+router.post('/createProduct', adminController.createProduct);
+
+router.get('/products/:type', adminController.productsByType);
+
 
 
 module.exports = router;
