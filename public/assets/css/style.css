@@ -270,4 +270,18 @@ body {
   /*background-repeat: no-repeat;*/
 }
 
+/* Sign in Page */
+
+#sign-in {
+/*  background-image: url("https://i.imgur.com/OEOq5vu.png");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 450px;
+}
+
+#sign-in-box {
+  max-width: 50%;
+  max-height: 50%;
+  margin-left: 19%;
+}
 
