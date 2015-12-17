@@ -37,6 +37,10 @@ main {
 #footer {
   background-color: #000000;
 }
+
+#footer-link-fb {
+  max-width: 50px;
+}
 /* Sliding Product Gallery */
 
 .gallery {
