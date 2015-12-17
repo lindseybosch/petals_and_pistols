@@ -18,10 +18,10 @@ var index = function(req, res, next){
 var addToTote = function(req, res){
   User.findOne({email: req.body.email}, function(error, user){
     if (error) res.json({message: 'Could not find user because ' + error});
-    user.products.push(req.body.productId);
-    user.save(function(err){
-      res.json(user.products);
-    })
+    // user.products.push(req.body.productId);
+    // user.save(function(err){
+    //   res.json(user.products);
+    // })
   });
 };
 

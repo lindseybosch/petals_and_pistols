@@ -5,7 +5,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  color: white;
+/*  color: white;*/
 }
 
 main {
@@ -38,8 +38,20 @@ main {
   background-color: #000000;
 }
 
-#footer-link-fb {
-  max-width: 50px;
+#footer-link-image-fb {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+#footer-link-image-tw {
+  max-width: 63px;
+  max-height: 63px;
+  padding-bottom: 8px;
+}
+
+#footer-link-image-pn {
+  max-width: 70px;
+  max-height: 70px;
 }
 /* Sliding Product Gallery */
 
@@ -155,4 +167,86 @@ main {
 #account-font {
   color: white;
 }
+
+#test {
+  color: white;
+  background-color: pink;
+}
+
+/* Dresses Page */
+
+
+#container {
+  height: 700px;
+  width: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  margin-left: 20%;
+}
+#container div {
+  height: 33.3%;
+  /*width: 100%;*/
+  display: inline-block;
+/*  background: pink;*/
+}
+
+.topNbottom {
+  width: 348px;
+}
+
+#altContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#altContainer div {
+/*  background: orange;*/
+  height: 50%;
+  border: 1px solid black;
+}
+
+/*#block-one-dresses {
+  background-image: url("https://i.imgur.com/8H8S0Eu.png");
+}*/
+
+#block-two-dresses {
+  background-image: url("https://i.imgur.com/9Dk142M.png");
+}
+
+#block-three-dresses {
+  background-image: url("https://i.imgur.com/FqWETuC.png");
+}
+
+#block-four-dresses {
+  background-image: url("https://i.imgur.com/LDOKX33.png");
+  background-repeat: no-repeat;
+}
+
+#block-five-dresses {
+  background-image: url("https://i.imgur.com/FHVPOv0.png");
+  background-repeat: no-repeat;
+}
+
+#block-six-dresses {
+  background-image: url("https://i.imgur.com/YKWlSt4.png");
+  background-repeat: no-repeat;
+}
+
+#block-seven-dresses {
+  background-image: url("https://i.imgur.com/M3aiRP1.png");
+  background-repeat: no-repeat;
+}
+
+#block-eight-dresses {
+  background-image: url("https://i.imgur.com/u35LIMB.png");
+  background-repeat: no-repeat;
+}
+
+#block-nine-dresses {
+  background-image: url("https://i.imgur.com/95eh1Gp.png");
+  background-repeat: no-repeat;
+}
+
 
