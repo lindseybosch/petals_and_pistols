@@ -177,8 +177,8 @@ main {
 
 
 #container {
-  height: 700px;
-  width: 700px;
+  height: 800px;
+  width: 800px;
   display: flex;
   flex-flow: row wrap;
   border: 1px solid black;
@@ -207,46 +207,67 @@ main {
   border: 1px solid black;
 }
 
-/*#block-one-dresses {
+#block-one-dresses {
   background-image: url("https://i.imgur.com/8H8S0Eu.png");
-}*/
+  border: solid black 4px;
+  background-size: cover;
+}
 
 #block-two-dresses {
   background-image: url("https://i.imgur.com/9Dk142M.png");
+  background-size: cover;
+  border: solid black 1px;
+
+    /*border-style: solid black 1px;*/
 }
 
 #block-three-dresses {
   background-image: url("https://i.imgur.com/FqWETuC.png");
+  background-size: cover;
+  border: solid black 1px;
+
 }
 
 #block-four-dresses {
   background-image: url("https://i.imgur.com/LDOKX33.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 1px;
+
 }
 
 #block-five-dresses {
   background-image: url("https://i.imgur.com/FHVPOv0.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 4px;
+  /*background-repeat: no-repeat;*/
 }
 
 #block-six-dresses {
   background-image: url("https://i.imgur.com/YKWlSt4.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 4px;
+  /*background-repeat: no-repeat;*/
 }
 
 #block-seven-dresses {
   background-image: url("https://i.imgur.com/M3aiRP1.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 4px;
+  /*background-repeat: no-repeat;*/
 }
 
 #block-eight-dresses {
   background-image: url("https://i.imgur.com/u35LIMB.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 4px;
+  /*background-repeat: no-repeat;*/
 }
 
 #block-nine-dresses {
   background-image: url("https://i.imgur.com/95eh1Gp.png");
-  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 4px;
+  /*background-repeat: no-repeat;*/
 }
 
 
