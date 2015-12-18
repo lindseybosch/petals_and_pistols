@@ -20,6 +20,9 @@ var allProducts = function(req, res){
 }
 
 var productsByType = function(req, res){
+
+console.log('productsByType: ' + req.params.type)
+
   Product.find({type: req.params.type}, function(error, products){
     res.json(products);
   })

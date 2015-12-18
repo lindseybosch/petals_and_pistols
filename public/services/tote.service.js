@@ -14,12 +14,17 @@
       getTote: function(){
         $http.get("/api/tote").then(function(res){
           tote = res.data;
+
+console.log('updated tote: ', res.data)
+
+
         });
       }
     };
 
     service.getTote();
-
+    console.log("service");
+    console.log("TEST");
     return service;
   }
 

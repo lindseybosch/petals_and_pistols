@@ -1,16 +1,28 @@
 <div id="sign-in" class="responsive-img" style="background-image: url('https://i.imgur.com/OEOq5vu.png')">
   <div id="sign-in-box">
     <h4>Sign In</h4>
-    <form id="token" class="pure-form center" ng-submit="vm.logInUser()">
+    <form id="token" class="pure-form center" ng-submit="mainCtrl.logInUser()">
       <fieldset class="pure-group center">
-        <input type="email" name="email" class="email" placeholder="user@domain.com" ng-model="vm.auth.email">
-        <input type="password" name="password" class="password" placeholder="secretpassword" ng-model="vm.auth.password">
-        <button type="submit" ng-hide="vm.auth.isLoggedIn" class="btn btn-primary">Login</button>
-       <button type="button" ng-show="vm.auth.isLoggedIn" ng-click="vm.auth.logOut()" class="btn btn-danger">Log Out</button>
+        <input type="email" name="email" class="email" placeholder="user@domain.com" ng-model="mainCtrl.auth.email">
+        <input type="password" name="password" class="password" placeholder="secretpassword" ng-model="mainCtrl.auth.password">
+        <button type="submit" ng-hide="mainCtrl.auth.isLoggedIn" ng-click="mainCtrl.logInUser()" class="btn btn-primary">Login</button>
+       <button type="button" ng-show="mainCtrl.auth.isLoggedIn" class="btn btn-danger">Log Out</button>
       </fieldset>
     </form>
   </div>
 </div>
+
+
+<!-- <div id="account-font">
+  <form id="account-page" id="user" class="pure-form center" ng-submit="mainCtrl.createUser()">
+    <fieldset class="pure-group center">
+      <input type="text"     ng-model="mainCtrl.user.name"     name="name" class="name" placeholder="Your Name">
+      <input type="email"    ng-model="mainCtrl.user.email"    name="email" class="email" placeholder="user@domain.com">
+      <input type="password" ng-model="mainCtrl.user.password" name="password" class="password" placeholder="secretpassword">
+      <button type="submit" class="pure-button pure-button-primary">Submit</button>
+    </fieldset>
+  </form>
+</div> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>

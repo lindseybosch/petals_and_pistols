@@ -22,21 +22,18 @@ console.log('configging')
           templateUrl: 'templates/account.html'
         })
 
-        .state('dresses', {
-          url: '/dresses',
-          templateUrl: 'templates/dresses.html',
-          controller: 'DressesController',
+        .state('products', {
+          url: '/products/:type',
+          templateUrl: 'templates/products.html',
+          controller: 'ProductsController',
           controllerAs: 'vm'
         })
 
-        .state('handbags', {
-          url: '/handbags',
-          templateUrl: 'templates/handbags.html'
-        })
-
-        .state('shoes', {
-          url: '/shoes',
-          templateUrl: 'templates/shoes.html'
+        .state('showProduct', {
+          url: '/showProduct',
+          templateUrl: 'templates/showProduct.html',
+          controller: 'ProductsController',
+          controllerAs: 'vm'
         })
 
         .state('tote', {
@@ -50,8 +47,6 @@ console.log('configging')
           controller: 'AdminController',
           controllerAs: 'vm'
         })
-
-
 
 
       $urlRouterProvider.otherwise('/home');

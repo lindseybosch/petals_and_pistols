@@ -14,7 +14,8 @@
       password: "",
       create:   create,
       currentUserData: currentUserData,
-      clear: clear
+      clear: clear,
+      product: {}
     };
 
     return user;

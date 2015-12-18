@@ -12,14 +12,19 @@ body {
   flex: 1 0 auto;
 }*/
 
-#admin {
-  background-color: pink;
-}
-
 /*#ui-style {
   margin-top: 40px;
 }
 */
+
+/* Admin Page for inventory */
+#admin {
+  background-color: grey;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
 
 /* Navigation Styling */
 
@@ -270,18 +275,38 @@ body {
   /*background-repeat: no-repeat;*/
 }
 
+#dress-page-image {
+  max-width: 20px;
+}
 /* Sign in Page */
 
 #sign-in {
 /*  background-image: url("https://i.imgur.com/OEOq5vu.png");*/
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 450px;
+/*  max-width: 450px;*/
+  height: 600px;
 }
 
 #sign-in-box {
   max-width: 50%;
   max-height: 50%;
   margin-left: 19%;
+  padding-left: 14%;
+  padding-top: 11%;
 }
 
+
+/* Single Product Page */
+
+.single-product-page {
+/*  color: white;*/
+  background-color: white;
+  padding-left: 34%;
+/*  border: solid white 2px;*/
+}
+
+.single-product-box {
+  border: solid white 2px;
+  margin-right: 62%
+}

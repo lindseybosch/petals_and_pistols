@@ -16,7 +16,7 @@
     vm.successMessage = "Present all of the current user's data here.";
     vm.failureMessage = "Present any error messages here.";
 
-    vm.user.tote = toteService.tote;
+    vm.toteService = toteService;
 
     vm.createUser = function() {
       vm.user.create()
