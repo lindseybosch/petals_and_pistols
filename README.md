@@ -1,5 +1,5 @@
 <p align="center">
- ###Petals & Pistols
+ <a>Petals & Pistols</a>
 </p> 
 *****************
 ![](https://i.imgur.com/wXxWAD2.jpg =300x)
@@ -28,70 +28,15 @@ ___
 Development | Design | Deployment
 ------------|------|-------------------
 HTML|  | Heroku
-CSS | Flickity | MongoLab
-Materialize | 
-JavaScript/jQuery |
-Node.js |
+Git | Flickity | MongoLab
+GitHub | Materialize | 
+JavaScript/jQuery | CSS
+Node.js | Photoshop
 Angular.js |
 MongoDB |
-Git |
-GitHub |
 
 ___
 
-####Design 
-
-* Photoshop
-
-
-####Get started 
-
-
-####Next Step 
-
-
-
-<a href="https://morning-spire-1673.herokuapp.com/"> <h1 align=center>Pixel Spot</h1> </a>
-
-Pixel Spot is a crowd sourced photo location scouting app.  Photographers of any skill level can use this app to  search and share their favorite photo locations with others.  Using Flickr's photo hosting and geo-tagging features in conjunction with Google Maps geo-location function users can find the exact spots of amazing photo locations.  Searching for a spot is  made easy with our built in tag fields as well as giving users the ability to create custom tags.  And, of course, users can also search by location.  If you have a photo shoot coming up find your next shot on Pixel Spot!
-
-___
-
-###Installation
-
-- Click on or copy & paste this link to reach our site:
-    - [https://morning-spire-1673.herokuapp.com/](https://morning-spire-1673.herokuapp.com/)
-- Heroku is used for online deployment for the app
-    - run `heroku config:set` **for each environment variable**
-    - database is running from MongoLab.  **Connecting the database requires the Heroku add-on for MongoLab.  The add-on is free, but it requires you to enter credit card information to validate the account.**
-- MongoLab is used to host the app's database
-  - seed data for seeding a mongo database is in seed.js, run with `node seed.js`
-  - run this command to import the data:
-  
-```
-mongoimport -h ds012345.mongolab.com:56789 -d dbname -c collectionname -u dbuser -p dbpassword --file filename.json
-```
-- Flickr API is used for getting geo-location information and hosting images.  **API key for Flickr is required**, check the Flickr API documentation for obtaining a key:
-  - [Flickr API](https://www.flickr.com/services/apps/create/apply)
-- Google API is used for OAuth and mapping.  **API key for Google is required**, check the Google API documentation for obtaining a key:
-  - [Google API](https://developers.google.com/+/web/api/rest/oauth#apikey)
-- GeoName API allows the app to search by zipcode.  **An account and API key for GeoName is required**, check the GeoName API documentation for obtaining a key:
-  - [GeoNames API](http://www.geonames.org/export/web-services.html)
-
-
-
-###API Documentation
-
-Method|Parameters|Description|Required Fields|Optional Fields|
--------------|------|-----------|-------|---|
-`index`|`/spots`|a user can see all spots based on a search query
-`show`|`/spots/:id`|a user can see a spot in more detail
-`create`|`/spots/new`|a user can create a new spot|`title`,  `description`, `flickr_url`, `tags`|`address`
-`update`|`/spots/:id`|a user can edit their spot
-`search`|`/spots/search/all`|a user can search for spots|`tags`
-`upvote`|`/spots/:id/upvote`|a user can upvote a spot
-`downvote`|`/spots/:id/downvote`|a user can downvote a spot
-`destroy`|`/spots/:id`|a user can delete their spot
 
 #####User Model
 
@@ -118,12 +63,6 @@ Parameters|Value|Description|Example|
 `rating`|Number|users can upvote or downvote a spot (default 0)
 `tags`|[tagSchema]|tags embedded into spot for search functionality|see "Tag Model"
  
-#####Tag Model
-
-Parameters|Value|Description|Example|
-----------|-----|-----------|-------|
-`tag_name`|String|searchable tags
-`created`|{ type: Date, default: Date.now }|*date spot was created*
 
 ___
 
