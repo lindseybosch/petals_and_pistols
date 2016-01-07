@@ -5,7 +5,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-/*  color: white;*/
+  color: white;
 }
 
 /*main {
@@ -277,6 +277,11 @@ body {
 
 #dress-page-image {
   max-width: 20px;
+}
+
+.dress-image {
+  max-height: 97px;
+  max-width: 155px;
 }
 /* Sign in Page */
 
