@@ -1,5 +1,5 @@
 <p align="center">
- Petals & Pistols
+ ###Petals & Pistols
 </p> 
 *****************
 ![](https://i.imgur.com/wXxWAD2.jpg =300x)
@@ -21,11 +21,26 @@ https://trello.com/b/wFc5D2ea/pedals-and-pistols
 * Mongoose
 * HTML
 
+___
+
+###Technologies Used
+
+Development | Design | Deployment
+------------|------|-------------------
+HTML|  | Heroku
+CSS | Flickity | MongoLab
+Materialize | 
+JavaScript/jQuery |
+Node.js |
+Angular.js |
+MongoDB |
+Git |
+GitHub |
+
+___
 
 ####Design 
-* CSS 
-* Materialize 
-* Flickity
+
 * Photoshop
 
 
@@ -63,23 +78,7 @@ mongoimport -h ds012345.mongolab.com:56789 -d dbname -c collectionname -u dbuser
 - GeoName API allows the app to search by zipcode.  **An account and API key for GeoName is required**, check the GeoName API documentation for obtaining a key:
   - [GeoNames API](http://www.geonames.org/export/web-services.html)
 
-___
 
-###Technologies Used
-
-Development | APIs | Deployment
-------------|------|-------------------
-HTML| Google | Heroku
-CSS | Flickr | MongoLab
-Bootstrap | GeoNames |
-JavaScript/jQuery |
-Node.js |
-Express |
-MongoDB |
-Git |
-GitHub |
-
-___
 
 ###API Documentation
 
@@ -134,25 +133,7 @@ ___
 
 ###Development Process
 
-<p align="center">
-<img src="https://i.imgur.com/z40rtWL.png" width="175px"/>
-</p>
 
-
-The Wayne Enterprises team consists of General Assembly students enrolled in the Web Development Immersive program (also known as WDI-DTLA-6).  The team was selected by the program's instructors and we were given a few days to discuss potential app ideas before the sprint week started.  We decided to make Pixel Spot because we felt it was an app that had immediate real world application and we could meet our project's requirements by:
-
-- Using MongoDB & Express to CRUD data
-- Producing a RESTful API that exposes at least one model
-- Consuming its own API using AJAX
-- Authenticating users using at least one OAuth provider
-- Restricting access to the Creation, Updating & Deletion of resource(s) using an authorization middleware function
-- Be deployed online using Heroku
-
-After deciding on our idea we began to discuss user stories, the different APIs we could consume, our models, and we started wireframing the general look and mapping of our app's site.  A link to our Trello board is provided above which contains our user stories, wireframes, data models and presentation deck.
-
-We will be using the Flickr API to host images and access those images' geo-location information.  This will allow our users to search for spots by location and it gives us the ability to plug that information into Google's API and display a map for the users to see exactly where a location is.  We are also using Google's API for OAuth.  
-
-Our API lets users create photo "spots" to share with others and allow them to add tags to make their spot easier for others to find.  A user can have one or many spots, and spots can have one or many tags.  A spot consists of a title, image, description, address, rating and tags.  The API also grabs the geo-location information from the image so that information can be displayed on a map and used for searching.  In addition to searching by location users can search by tags which will give users a lot of control over what types of locations they will see based on the type of photoshoot they desire.  
 
 ___
 
