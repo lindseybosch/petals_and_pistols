@@ -1,5 +1,5 @@
 <p align="center">
- **Petals & Pistols**
+ <strong>Petals & Pistols </strong>
 </p> 
 *****************
 <p align="center">
@@ -8,12 +8,8 @@ Petals & Pistols is a online clothing shopping site for the modern edgy girl. I 
 ___
 
 <p align="center">
-<img src="https://i.imgur.com/wXxWAD2.jpg" width="300px" height="500px"/>
-<img src="https://i.imgur.com/3AQOzEr.jpg" width=300px height="500px"/>
-</p>
-
-<p align="right">
-<img src="https://i.imgur.com/3AQOzEr.jpg" width=300px/>
+<img src="https://i.imgur.com/wXxWAD2.jpg" width="300px" height="800px"/>
+<img src="https://i.imgur.com/3AQOzEr.jpg" width=300px height="800px"/>
 </p>
 
 ___
