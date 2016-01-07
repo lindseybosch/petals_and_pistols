@@ -1,7 +1,7 @@
 <p align="center">
-<img src="https://i.imgur.com/Bq269fK.png" width="75px"/>
+ Petals & Pistols
 </p> 
-
+*****************
 ![](https://i.imgur.com/wXxWAD2.jpg =300x)
 
 ![](https://i.imgur.com/3AQOzEr.jpg =300x)
