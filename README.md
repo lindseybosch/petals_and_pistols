@@ -9,10 +9,11 @@ ___
 
 <p align="left">
 <img src="https://i.imgur.com/wXxWAD2.jpg" width="300px"/>
+<img src="https://i.imgur.com/3AQOzEr.jpg" width=300px/>
 </p>
 
 <p align="right">
-<img src="https://i.imgur.com/3AQOzEr.jpg" width=300x/>
+<img src="https://i.imgur.com/3AQOzEr.jpg" width=300px/>
 </p>
 
 ___
