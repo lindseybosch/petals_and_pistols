@@ -7,11 +7,11 @@ Petals & Pistols is a online clothing shopping site for the modern edgy girl. I 
 </p>
 ___
 
-<p align="center">
+<p align="left">
 <img src="https://i.imgur.com/wXxWAD2.jpg" width="300px"/>
 </p>
 
-<p align="center">
+<p align="right">
 <img src="https://i.imgur.com/3AQOzEr.jpg" width=300x/>
 </p>
 
