@@ -2,8 +2,9 @@
  <a>Petals & Pistols</a>
 </p> 
 *****************
-
-
+<p align="center">
+Petals & Pistols is a online clothing shopping site for the modern edgy girl. I created a MEAN Stack Application for this final project at GA and  decided to really focus on making a solid design plan for this application, using the clothing store Nasty Gal as my design inspiration. I created detail designs in Photoshop with the intension of showcasing not only my design skills but my ability to make design concepts come to life through development. I really wanted to use my previous design experience and combine it with my new development skills. 
+</p>
 ___
 
 <p align="center">
@@ -11,7 +12,7 @@ ___
 </p>
 
 <p align="center">
-![](https://i.imgur.com/3AQOzEr.jpg =300x)
+<img src="https://i.imgur.com/3AQOzEr.jpg" width=300x/>
 </p>
 
 ___
