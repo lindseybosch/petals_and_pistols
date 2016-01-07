@@ -2,8 +2,12 @@
  <a>Petals & Pistols</a>
 </p> 
 *****************
+
+
+___
+
 <p align="center">
-![](https://i.imgur.com/wXxWAD2.jpg =300x)
+<img src="https://i.imgur.com/wXxWAD2.jpg" width="300px"/>
 </p>
 
 <p align="center">
