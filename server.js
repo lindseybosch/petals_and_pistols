@@ -9,6 +9,7 @@ var jwt        = require("jsonwebtoken");
 
 
 // Load local lib
+require('dotenv').load();
 var env      = require('./api/config/environment'),
     mongoose = require('./api/config/database')
 
