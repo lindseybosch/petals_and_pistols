@@ -10,7 +10,7 @@
   function ProductsController($http, $stateParams, userDataService, toteService, $state) {
     var vm = this;
 
-    // console.log($stateParams.type);
+    console.log($stateParams.type);
 
     $http.get("/api/products/" + $stateParams.type).then(function (res){
       vm.products = res.data;
