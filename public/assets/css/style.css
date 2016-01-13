@@ -8,14 +8,6 @@ body {
   color: white;
 }
 
-/*main {
-  flex: 1 0 auto;
-}*/
-
-/*#ui-style {
-  margin-top: 40px;
-}
-*/
 
 /* Admin Page for inventory */
 #admin {
@@ -178,7 +170,7 @@ body {
   background-color: pink;
 }
 
-/* Dresses Page */
+/* Product Page */
 
 
 #container {
@@ -191,9 +183,7 @@ body {
 }
 #container div {
   height: 33.3%;
-  /*width: 100%;*/
   display: inline-block;
-/*  background: pink;*/
 }
 
 .topNbottom {
@@ -207,7 +197,6 @@ body {
 }
 
 #altContainer div {
-/*  background: orange;*/
   height: 50%;
   border: 1px solid black;
 }
@@ -244,7 +233,7 @@ body {
   background-image: url("https://i.imgur.com/FHVPOv0.png");
   background-size: cover;
   border: solid black 4px;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
 }
 
 #block-six-dresses {
@@ -275,21 +264,26 @@ body {
   /*background-repeat: no-repeat;*/
 }
 
-#dress-page-image {
-  max-width: 20px;
+
+.product-image {
+  max-height: 409px;
+  max-width: 308px;
+  margin-left: -1%;
+  padding-right: 8px;
+  margin-right: 1%;
 }
 
-.dress-image {
-  max-height: 97px;
-  max-width: 155px;
+#product-section{
+  margin-left: 223px;
+  margin-right: 100px;
+  width: 124.33333%;
 }
+
 /* Sign in Page */
 
 #sign-in {
-/*  background-image: url("https://i.imgur.com/OEOq5vu.png");*/
   background-repeat: no-repeat;
   background-size: cover;
-/*  max-width: 450px;*/
   height: 600px;
 }
 
@@ -305,13 +299,19 @@ body {
 /* Single Product Page */
 
 .single-product-page {
-/*  color: white;*/
-  background-color: white;
   padding-left: 34%;
-/*  border: solid white 2px;*/
 }
 
 .single-product-box {
   border: solid white 2px;
   margin-right: 62%
 }
+
+.show-product {
+  max-width: 100%;
+}
+
+#add-product-button{
+  color: black;
+}
+
